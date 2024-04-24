@@ -11,10 +11,10 @@ async setupNodeEvents(on, config) {
     on("task", {
         async connectDB(query){
         const client = new Client({
-        host: 'live-nagwa-otp.cluster-cmmuo3lde4yu.us-east-1.rds.amazonaws.com',
-        user: 'testing_team',
-        password: 'Sp5YkYwH576tjYEcLV4PP7',
-        database: 'live-mmOtpDataBase',
+        host: '',
+        user: '',
+        password: '',
+        database: '',
         port: 5432
           })
           await client.connect()
@@ -27,10 +27,10 @@ async setupNodeEvents(on, config) {
         ,
         async NagwaClassesDB(query){
           const client = new Client({
-          host: 'nagwa-classes-prod.cluster-c4iigfolsbo7.us-east-1.rds.amazonaws.com',
-          user: 'testing_readwrite',
-          password: '8yZ%`6!e?~0q6<MM?hHO',
-          database: 'nagwa_classes',
+          host: '',
+          user: '',
+          password: '',
+          database: '',
           port: 5432
             })
             await client.connect()
