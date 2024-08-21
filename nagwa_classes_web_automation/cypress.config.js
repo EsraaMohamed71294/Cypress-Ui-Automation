@@ -59,7 +59,15 @@ env: {
     baseURL: 'https://api-users.nagwa.com/',
     new_user_email: 'salma.ehab@nagwa.com',
     new_user_mobile:'01159144599'
-}
+},
+
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/reports",
+    "overwrite": false,
+    "html": true,
+    "json": true
+  }
 }, 
 });
 
